@@ -155,10 +155,10 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-muted-foreground mb-1">Email</p>
                 <a 
-                  href="mailto:seuemail@exemplo.com" 
+                  href="mailto:gabrielnunesdev01@gmail.com" 
                   className="font-medium hover:text-primary transition-colors duration-300"
                 >
-                  seuemail@exemplo.com
+                  gabrielnunesdev01@gmail.com
                 </a>
               </div>
             </div>
@@ -170,12 +170,12 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-muted-foreground mb-1">LinkedIn</p>
                 <a 
-                  href="https://linkedin.com/in/seuperfil" 
+                  href="https://www.linkedin.com/in/gabriel-nunes-085gn/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-medium hover:text-primary transition-colors duration-300"
                 >
-                  linkedin.com/in/seuperfil
+                  https://www.linkedin.com/in/gabriel-nunes-085gn/
                 </a>
               </div>
             </div>
@@ -187,12 +187,12 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-muted-foreground mb-1">GitHub</p>
                 <a 
-                  href="https://github.com/seuperfil" 
+                  href="https://github.com/GabrielNunes5" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="font-medium hover:text-primary transition-colors duration-300"
                 >
-                  github.com/seuperfil
+                  https://github.com/GabrielNunes5
                 </a>
               </div>
             </div>
@@ -226,8 +226,8 @@ const Contact = () => {
                   <span className="text-sm">✓</span>
                 </div>
                 <div>
-                  <span className="font-medium">Remoto:</span>
-                  <span className="text-muted-foreground"> Preferência por trabalho remoto</span>
+                  <span className="font-medium">Hibrido:</span>
+                  <span className="text-muted-foreground"> Disponivel para qualquer modalidade</span>
                 </div>
               </div>
             </div>

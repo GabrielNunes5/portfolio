@@ -67,20 +67,20 @@ const About = () => {
                 <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>Desenvolvedor Back-End Sênior</span>
+                <span>Desenvolvedor Back-End</span>
               </li>
               <li className="flex items-start">
                 <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
                   <span className="text-sm">✓</span>
                 </div>
-                <span>Arquiteto de Soluções</span>
+                <span>Desenvolvedor FullStack</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
                   <span className="text-sm">✓</span>
                 </div>
                 <span>Especialista em Microsserviços</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </motion.div>

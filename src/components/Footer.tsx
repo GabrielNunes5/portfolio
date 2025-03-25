@@ -25,14 +25,14 @@ const Footer = () => {
         
         <div className="flex space-x-5 mb-6 md:mb-0">
           <a 
-            href="mailto:seuemail@exemplo.com" 
+            href="mailto:gabrielnunesdev01@gmail.com" 
             className="h-10 w-10 rounded-full bg-white shadow-subtle flex items-center justify-center text-primary transition-all duration-300 hover:shadow-md hover:-translate-y-1"
             aria-label="Email"
           >
             <Mail size={18} />
           </a>
           <a 
-            href="https://linkedin.com/in/seuperfil" 
+            href="https://www.linkedin.com/in/gabriel-nunes-085gn/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="h-10 w-10 rounded-full bg-white shadow-subtle flex items-center justify-center text-primary transition-all duration-300 hover:shadow-md hover:-translate-y-1"
@@ -41,7 +41,7 @@ const Footer = () => {
             <Linkedin size={18} />
           </a>
           <a 
-            href="https://github.com/seuperfil" 
+            href="https://github.com/GabrielNunes5" 
             target="_blank" 
             rel="noopener noreferrer"
             className="h-10 w-10 rounded-full bg-white shadow-subtle flex items-center justify-center text-primary transition-all duration-300 hover:shadow-md hover:-translate-y-1"

@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/30 to-blue-400/30 rounded-full blur-3xl opacity-30 animate-pulse-subtle"></div>
             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 sm:border-8 border-white shadow-lg animate-blur-in">
               <img 
-                src="https://images.unsplash.com/photo-1596075780750-81249df16d19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+                src="/public/assets/IMG-20230708-WA0048.jpg" 
                 alt="Desenvolvedor Back-End" 
                 className="w-full h-full object-cover" 
               />
