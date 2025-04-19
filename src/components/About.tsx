@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { fadeIn, slideInLeft, slideInRight } from '@/lib/animations';
-import { Code, Database, Server } from 'lucide-react';
+import { Code, Database, Server, FileCode } from 'lucide-react';
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,14 +10,17 @@ const About = () => {
   
   const skills = [
     { icon: <Server className="h-5 w-5" />, text: "APIs RESTful" },
-    { icon: <Database className="h-5 w-5" />, text: "Banco de Dados" },
-    { icon: <Code className="h-5 w-5" />, text: "Microsserviços" },
-    { icon: <Server className="h-5 w-5" />, text: "Java / Spring" },
-    { icon: <Database className="h-5 w-5" />, text: "Node.js" },
-    { icon: <Code className="h-5 w-5" />, text: "Python" },
+    { icon: <Server className="h-5 w-5" />, text: "Microsserviços" },
     { icon: <Server className="h-5 w-5" />, text: "Docker" },
+    { icon: <Code className="h-5 w-5" />, text: "Java / Spring" },
+    { icon: <Code className="h-5 w-5" />, text: "Node.js" },
+    { icon: <Code className="h-5 w-5" />, text: "Python" },
+    { icon: <FileCode className="h-5 w-5" />, text: "Tailwind" },
+    { icon: <FileCode className="h-5 w-5" />, text: "React" },
+    { icon: <FileCode className="h-5 w-5" />, text: "TypeScript" },
+    { icon: <Database className="h-5 w-5" />, text: "Banco de Dados SQL" },
     { icon: <Database className="h-5 w-5" />, text: "PostgreSQL" },
-    { icon: <Code className="h-5 w-5" />, text: "MongoDB" },
+    { icon: <Database className="h-5 w-5" />, text: "MySQL" },
   ];
 
   return (
@@ -31,18 +34,16 @@ const About = () => {
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-sm font-medium border border-primary/20 bg-primary/5 text-primary">
+          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
             Sobre Mim
           </div>
-          
-          <h2 className="section-heading">Criando a infraestrutura que sustenta aplicações modernas</h2>
-          
+          <h2 className="section-heading">Criando experiências digitais completas e integradas</h2>  
           <p className="text-muted-foreground mb-6">
-            Minha jornada na programação começou com a curiosidade sobre como os sistemas funcionam por trás das interfaces. Essa curiosidade me levou a me especializar no desenvolvimento back-end, onde posso criar soluções robustas que sustentam aplicações de grande escala.
+            Minha jornada na programação começou com a curiosidade sobre como os sistemas funcionam por trás das interfaces e como elas podem proporcionar experiências incríveis. Essa curiosidade me levou a explorar tanto o desenvolvimento back-end quanto o front-end, permitindo que eu crie soluções completas que conectam eficiência técnica com usabilidade.
           </p>
           
           <p className="text-muted-foreground mb-8">
-            Atualmente, estou focado em arquiteturas de microsserviços, APIs REST e GraphQL, além de estar sempre estudando novas tecnologias como Kubernetes, mensageria com Kafka e arquiteturas serverless para expandir minhas habilidades e entregar soluções cada vez mais modernas e eficientes.
+            Atualmente, estou me dedicando ao desenvolvimento de aplicações completas, explorando tecnologias como Java com Spring Boot e React com TypeScript para criar soluções robustas e escaláveis. Meu objetivo é unir a eficiência técnica com interfaces intuitivas, garantindo uma experiência fluida e integrada para os usuários.
           </p>
           
           <div className="flex flex-wrap gap-2 mb-8">
@@ -75,12 +76,6 @@ const About = () => {
                 </div>
                 <span>Desenvolvedor FullStack</span>
               </li>
-              {/* <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Especialista em Microsserviços</span>
-              </li> */}
             </ul>
           </div>
         </motion.div>
@@ -101,9 +96,20 @@ const About = () => {
                     <Server size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Desenvolvimento Back-End</h3>
+                    <h3 className="font-semibold text-lg mb-1">Desenvolvimento Back-End</h3>
                     <p className="text-muted-foreground text-sm">
                       Especializado em criar APIs e serviços altamente performáticos e escaláveis usando Java, Node.js e Python.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <div className="flex flex-shrink-0 items-center justify-center h-12 w-12 rounded-md bg-primary/10 text-primary mr-4">
+                    <FileCode size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">Desenvolvimento Front-End</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Focado em criar interfaces modernas e responsivas utilizando React, TypeScript e ferramentas como Tailwind CSS para proporcionar experiências de usuário intuitivas e envolventes.
                     </p>
                   </div>
                 </div>
@@ -113,9 +119,9 @@ const About = () => {
                     <Database size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Bancos de Dados</h3>
+                    <h3 className="font-semibold text-lg mb-1">Bancos de Dados</h3>
                     <p className="text-muted-foreground text-sm">
-                      Experiência com modelagem e otimização de bancos relacionais (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis).
+                      Experiência com modelagem e otimização de bancos relacionais (PostgreSQL, MySQL).
                     </p>
                   </div>
                 </div>
@@ -125,7 +131,7 @@ const About = () => {
                     <Code size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Arquitetura de Software</h3>
+                    <h3 className="font-semibold text-lg mb-1">Arquitetura de Software</h3>
                     <p className="text-muted-foreground text-sm">
                       Desenho e implementação de arquiteturas escaláveis, desde monolitos até microsserviços e sistemas distribuídos.
                     </p>

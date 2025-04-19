@@ -16,18 +16,18 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center min-h-[calc(100vh-5rem)]">
         <div className="order-2 lg:order-1 flex flex-col justify-center animate-fade-in">
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-sm font-medium border border-primary/20 bg-primary/5 text-primary animate-fade-in">
-            Desenvolvedor Back-End
+          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary animate-fade-in">
+            Desenvolvedor FullStack
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 animate-fade-in">
             <span>Transformando ideias em</span>
             <br />
-            <span className="text-gradient">APIs robustas e escaláveis</span>
+            <span className="text-gradient">Sistemas robustos e escaláveis</span>
           </h1>
           
           <p className="text-muted-foreground text-lg mb-8 max-w-xl animate-fade-in">
-            Especialista em desenvolvimento de APIs e microsserviços que sustentam aplicações de alta performance e escalabilidade.
+            Especialista em desenvolvimento FullStack, criando interfaces intuitivas e sistemas robustos que trabalham em harmonia para entregar soluções completas.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-fade-in">
@@ -59,7 +59,7 @@ const Hero = () => {
             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 sm:border-8 border-white shadow-lg animate-blur-in">
               <img 
                 src="/public/assets/IMG-20230708-WA0048.jpg" 
-                alt="Desenvolvedor Back-End" 
+                alt="Desenvolvedor Full-Stack" 
                 className="w-full h-full object-cover" 
               />
             </div>

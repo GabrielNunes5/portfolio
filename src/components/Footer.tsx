@@ -16,10 +16,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0">
           <a href="#" className="text-xl font-bold text-primary transition-colors duration-300 hover:text-primary/80">
-            dev.backend
+            Gabriel Nunes
           </a>
           <p className="text-muted-foreground mt-2 text-sm">
-            Desenvolvedor Back-End especializado em APIs e microsserviços
+            Desenvolvedor FullStack transformando ideias em sistemas robustos e escaláveis.
           </p>
         </div>
         

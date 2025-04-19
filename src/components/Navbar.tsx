@@ -66,7 +66,7 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection(item.id);
               }}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300 cursor-pointer text-sm font-medium"
+              className="md:text-lg text-foreground/80 hover:text-primary transition-colors duration-300 cursor-pointer text-sm font-medium"
             >
               {item.name}
             </a>

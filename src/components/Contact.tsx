@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import { Github, Linkedin, Mail, Send, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -56,7 +56,7 @@ const Contact = () => {
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-sm font-medium border border-primary/20 bg-primary/5 text-primary">
+          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
             Contato
           </div>
           
@@ -159,6 +159,23 @@ const Contact = () => {
                   className="font-medium hover:text-primary transition-colors duration-300"
                 >
                   gabrielnunesdev01@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <Phone size={24} />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground mb-1">Whatsapp</p>
+                <a 
+                  href="https://wa.me/message/ZOVWUPOXS6K5H1?src=qr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-primary transition-colors duration-300"
+                >
+                  (85)98767-1308
                 </a>
               </div>
             </div>
