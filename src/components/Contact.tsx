@@ -44,6 +44,7 @@ const Contact = () => {
     toast({
       title: "Mensagem enviada!",
       description: "Obrigado por entrar em contato. Responderei o mais breve possível.",
+      variant: "success",
     });
 
     setFormData({ name: '', email: '', message: '' });
