@@ -1,4 +1,3 @@
-
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { fadeIn, slideInLeft, slideInRight } from '@/lib/animations';
@@ -7,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Github, Linkedin, Mail, Send, Phone } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,26 +25,39 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Mensagem enviada!",
-        description: "Obrigado por entrar em contato. Responderei o mais breve possível.",
-      });
-      
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-      
-      setIsSubmitting(false);
-    }, 1000);
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const result = await emailjs.send(
+      import.meta.env.VITE_USERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      {
+        name: formData.name,
+        title: formData.email,
+        message: formData.message,
+      },
+      import.meta.env.VITE_USER_ID
+        );
+
+    toast({
+      title: "Mensagem enviada!",
+      description: "Obrigado por entrar em contato. Responderei o mais breve possível.",
+    });
+
+    setFormData({ name: '', email: '', message: '' });
+  } catch (error) {
+    console.error('Erro ao enviar email:', error);
+    toast({
+      title: "Erro ao enviar mensagem",
+      description: "Tente novamente mais tarde.",
+      variant: "destructive"
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="contact" className="section relative" ref={ref}>
