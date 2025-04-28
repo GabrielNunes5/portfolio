@@ -10,6 +10,14 @@ const Hero = () => {
     }
   };
 
+  const downloadCurriculo = () => {
+    const link = document.createElement('a');
+    link.href = '/curriculo.pdf';
+    link.download = 'curriculo.pdf';
+    link.click();
+  };
+
+
   return (
     <section id="hero" className="min-h-screen relative pt-20 px-6 sm:px-8">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background/0 pointer-events-none" />
@@ -27,11 +35,11 @@ const Hero = () => {
           </h1>
           
           <p className="text-muted-foreground text-lg mb-8 max-w-xl animate-fade-in">
-            Especialista em desenvolvimento FullStack, criando interfaces intuitivas e sistemas robustos que trabalham em harmonia para entregar soluções completas.
+            Especialista em desenvolvimento FullStack, criando interfaces intuitivas e sistemas robustos para entregar soluções completas.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-fade-in">
-            <Button className="bg-primary hover:bg-primary/90 group" size="lg">
+            <Button className="bg-primary hover:bg-primary/90 group" size="lg" onClick={downloadCurriculo}>
               <Download size={18} className="mr-2 transition-transform duration-300 group-hover:-translate-y-1" />
               Baixar Currículo
             </Button>
