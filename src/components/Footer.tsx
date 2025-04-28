@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Phone, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -48,6 +48,15 @@ const Footer = () => {
             aria-label="GitHub"
           >
             <Github size={18} />
+          </a>
+          <a 
+            href="https://wa.me/message/ZOVWUPOXS6K5H1?src=qr" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white shadow-subtle flex items-center justify-center text-primary transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+            aria-label="WhatsApp"
+          >
+            <Phone size={18} />
           </a>
         </div>
         

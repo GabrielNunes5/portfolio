@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/30 to-blue-400/30 rounded-full blur-3xl opacity-30 animate-pulse-subtle"></div>
             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 sm:border-8 border-white shadow-lg animate-blur-in">
               <img 
-                src="/public/assets/IMG-20230708-WA0048.jpg" 
+                src="assets/IMG-20230708-WA0048.jpg" 
                 alt="Desenvolvedor Full-Stack" 
                 className="w-full h-full object-cover" 
               />
