@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { X, Link as LinkIcon, Github, Code, ArrowRight } from 'lucide-react';
@@ -27,8 +26,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-3xl bg-white/95 backdrop-blur-sm border-none shadow-premium p-0 overflow-hidden">
-        <div className="relative w-full aspect-video overflow-hidden">
+      <DialogContent className="sm:max-w-3xl max-h-[90vh] bg-white/95 backdrop-blur-sm border-none shadow-premium p-0 overflow-hidden">
+        <div className="relative w-full flex items-center justify-center bg-black/5 max-h-[40vh]">
           <div className={cn(
             "absolute inset-0 bg-black/40 z-10 flex items-center justify-center",
             isLoaded ? "opacity-0" : "opacity-100"
@@ -37,8 +36,8 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
             src={project.image}
             alt={project.title}
             className={cn(
-              "w-full h-full object-cover transition-all duration-500 ease-out",
-              isLoaded ? "scale-100 blur-0" : "scale-110 blur-md"
+              "w-full max-h-[40vh] object-contain mx-auto my-auto transition-all duration-500 ease-out",
+              isLoaded ? "opacity-100 blur-0" : "opacity-0 blur-md"
             )}
             onLoad={() => setIsLoaded(true)}
           />
@@ -51,7 +50,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
           </button>
         </div>
 
-        <div className="p-6 sm:p-8">
+        <div className="p-6 sm:p-8 overflow-y-auto max-h-[calc(90vh-40vh)]">
           <DialogHeader>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech, index) => (
