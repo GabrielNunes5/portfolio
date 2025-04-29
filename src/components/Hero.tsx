@@ -80,7 +80,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-fade-in">
+      <div className="hidden sm:flex absolute bottom-8 left-0 right-0 justify-center animate-fade-in">
         <button 
           onClick={() => {
             const aboutSection = document.getElementById('about');
