@@ -27,7 +27,7 @@ function ProjectModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-hidden border-none shadow-premium p-0 bg-white/95 backdrop-blur-sm">
+      <DialogContent className="w-full max-w-[95vw] sm:max-w-3xl max-h-[90vh] overflow-hidden border-none shadow-premium p-0 bg-white/95 backdrop-blur-sm rounded-lg">
         <motion.div {...scaleIn(0)}>
           {/* Imagem e botão de fechar */}
           <div className="relative w-full flex items-center justify-center bg-black/5 max-h-[40vh]">
