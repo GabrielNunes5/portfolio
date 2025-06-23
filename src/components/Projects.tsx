@@ -33,7 +33,7 @@ const Projects = () => {
           animate={isInView ? "animate" : "initial"}
         >
           <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
-            Meus Projetos
+            Projetos
           </div>
             <h2 className="section-heading">Projetos que unem <span className="text-gradient">criatividade</span>  e <span className="text-gradient">tecnologia</span></h2>
           <p className="section-subheading max-w-2xl mx-auto">
