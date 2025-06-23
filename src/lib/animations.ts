@@ -1,15 +1,14 @@
 
-export const fadeIn = (delay: number = 0) => ({
+export const fadeIn = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     y: 0,
-    transition: { 
-      duration: 0.7,
-      ease: [0.11, 0, 0.5, 0],
-      delay: delay 
-    } 
-  },
+    transition: {
+      opacity: { delay, duration: 0.6, type: "spring" },
+      y: { delay, duration: 0.6, type: "spring" }
+    }
+  }
 });
 
 export const scaleIn = (delay: number = 0) => ({
