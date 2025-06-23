@@ -57,6 +57,7 @@ const Navbar = () => {
           {[
             { name: 'Início', id: 'hero' },
             { name: 'Sobre', id: 'about' },
+            { name: 'Habilidades', id: 'skills' },
             { name: 'Projetos', id: 'projects' },
             { name: 'Contato', id: 'contact' }
           ].map((item) => (
@@ -90,6 +91,7 @@ const Navbar = () => {
             {[
               { name: 'Início', id: 'hero' },
               { name: 'Sobre', id: 'about' },
+              { name: 'Habilidades', id: 'skills' },
               { name: 'Projetos', id: 'projects' },
               { name: 'Contato', id: 'contact' }
             ].map((item) => (

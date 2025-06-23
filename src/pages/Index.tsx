@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Skills from '@/components/Skills';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,7 @@ const Index = () => {
       <main>
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Contact />
       </main>
