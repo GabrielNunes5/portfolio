@@ -41,14 +41,34 @@ const Skills = () => {
           }}
         >
           <div className="relative p-8 flex flex-col items-center">
-            <Code size={32} className="text-primary mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Habilidades Técnicas</h3>
-            <ul className="text-muted-foreground text-sm space-y-1 text-center">
-              <li >Java, SpringBoot</li>
-              <li>Python, Django, Flask</li>
-              <li>JavaScript, Nextjs, React</li>
-              <li>TypeScript, Tailwind CSS</li>
-              <li>PostgreSQL, MySQL</li>
+            <Code size={40} className="text-primary mb-2" />
+            <h3 className="font-semibold text-xl mb-2">Habilidades Técnicas</h3>
+            <ul className="text-muted-foreground space-y-1 text-center text-xl">
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Java, SpringBoot</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>PostgreSQL, MySQL</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Python, Django, Flask</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>JavaScript, Nextjs, React</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>TypeScript, Tailwind CSS</h4>
+                </div>
+              </li>
             </ul>
           </div>
         </motion.div>
@@ -65,13 +85,34 @@ const Skills = () => {
           }}
         >
           <div className="relative p-8 flex flex-col items-center">
-            <Settings size={32} className="text-primary mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Ferramentas</h3>
-            <ul className="text-muted-foreground text-sm space-y-1 text-center">
-              <li>Git & GitHub</li>
-              <li>Docker & Docker Compose</li>
-              <li>VS Code, Postman</li>
-              <li>Linux, Windows</li>
+            <Settings size={40} className="text-primary mb-2" />
+            <h3 className="font-semibold text-xl mb-2">Ferramentas</h3>
+            <ul className="text-muted-foreground space-y-1 text-center text-xl">
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Git & GitHub</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Linux, Windows</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>VS Code, Intellij</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Postman, Insomnia</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Docker & Docker Compose</h4>
+                </div>
+              </li>
             </ul>
           </div>
         </motion.div>
@@ -88,13 +129,34 @@ const Skills = () => {
           }}
         >
           <div className="relative p-8 flex flex-col items-center">
-            <Smile size={32} className="text-primary mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Soft Skills</h3>
-            <ul className="text-muted-foreground text-sm space-y-1 text-center">
-              <li>Comunicação clara</li>
-              <li>Trabalho em equipe</li>
-              <li>Resolução de problemas</li>
-              <li>Proatividade e aprendizado contínuo</li>
+            <Smile size={40} className="text-primary mb-2" />
+            <h3 className="font-semibold text-xl mb-2">Soft Skills</h3>
+            <ul className="text-muted-foreground space-y-1 text-center text-xl">
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Proatividade</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Comunicação clara</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Trabalho em equipe</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Aprendizado contínuo</h4>
+                </div>
+              </li>
+              <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
+                <div>
+                  <h4>Resolução de problemas</h4>
+                </div>
+              </li>
             </ul>
           </div>
         </motion.div>
