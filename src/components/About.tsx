@@ -50,7 +50,7 @@ const About = () => {
             {skills.map((skill, index) => (
               <motion.div 
                 key={index}
-                className="flex items-center bg-white shadow-subtle hover:shadow-md px-3 py-1.5 rounded-full text-sm transition-all duration-300 ease-in-out hover:bg-primary/5 hover:-translate-y-1"
+                className="flex items-center bg-white shadow-subtle hover:shadow-md px-3 py-1.5 rounded-full text-sm transition-all duration-300 ease-in-out hover:bg-primary/5 hover:-translate-y-1 cursor-pointer"
                 variants={fadeIn(0.1 * index)}
                 initial="initial"
                 animate={isInView ? "animate" : "initial"}
