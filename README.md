@@ -4,13 +4,15 @@ Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para 
 
 ## 🖥️ Tecnologias Utilizadas
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React**: Biblioteca JavaScript para construção de interfaces web.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
 - **Tailwind CSS**: Framework CSS utilitário para estilização rápida e responsiva.
 - **Framer Motion**: Biblioteca para animações fluidas e interativas.
 - **Vite**: Ferramenta de build rápida para desenvolvimento web.
 - **Lucide Icons**: Conjunto de ícones modernos e personalizáveis.
 - **EmailJS**: Integração para envio de e-mails diretamente do formulário de contato.
+- **Radix UI**: Biblioteca de componentes acessíveis e personalizáveis para construção de interfaces modernas.
+
 
 ## 📂 Estrutura do Projeto
 
@@ -26,6 +28,7 @@ Essa estrutura modular facilita a manutenção e escalabilidade do projeto.
 
 - **Hero**: Seção inicial com uma introdução e chamada para ação.
 - **About**: Apresentação das habilidades e experiências.
+- **Skills**: Apresentando as habilidades tecnicas e comportamentais e ferramentas utilizadas 
 - **Projects**: Galeria de projetos com detalhes e tecnologias utilizadas.
 - **Contact**: Formulário de contato para envio de mensagens.
 - **Footer**: Rodapé com links para redes sociais e informações adicionais.
