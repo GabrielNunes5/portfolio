@@ -133,7 +133,7 @@ const About = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Arquitetura de Software</h3>
                     <p className="text-muted-foreground text-sm">
-                      Desenho e implementação de arquiteturas escaláveis, desde monolitos até microsserviços e sistemas distribuídos.
+                      Desenho e implementação de arquiteturas escaláveis utilizando padrões como MVC (Model-View-Controller) ou DDD (Domain-Driven Design), abrangendo desde monolitos até microsserviços e sistemas distribuídos.
                     </p>
                   </div>
                 </div>
