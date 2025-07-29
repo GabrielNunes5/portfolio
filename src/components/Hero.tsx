@@ -24,7 +24,7 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center min-h-[calc(100vh-5rem)]">
         <div className="order-2 lg:order-1 flex flex-col justify-center animate-fade-in">
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary animate-fade-in">
+          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 animate-fade-in">
             Desenvolvedor FullStack
           </div>
           
