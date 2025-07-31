@@ -1,4 +1,3 @@
-
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { fadeIn } from '@/lib/animations';
@@ -24,17 +23,15 @@ const Projects = () => {
   return (
     <section id="projects" className="section relative bg-primary/5" ref={ref}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[50%] h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-
+      <div className="w-fit mx-auto mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
+        Projetos
+      </div>
       <div className="text-center mb-16">
         <motion.div
           variants={fadeIn()}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
-            Projetos
-          </div>
             <h2 className="section-heading">Projetos que unem <span className="text-gradient">criatividade</span>  e <span className="text-gradient">tecnologia</span></h2>
           <p className="section-subheading max-w-2xl mx-auto">
             Conheça alguns dos meus projetos de destaque. Cada um deles representa desafios únicos que foram superados com soluções técnicas robustas.
