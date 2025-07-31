@@ -60,7 +60,7 @@ const Footer = () => {
           </a>
         </div>
         
-        <div className="flex flex-col items-end">
+        <div className="hidden sm:flex flex-col items-end">
           <button 
             onClick={scrollToTop}
             className="p-3 rounded-full bg-white shadow-subtle hover:shadow-md transition-all duration-300 hover:-translate-y-1 mb-4"
