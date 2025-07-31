@@ -26,60 +26,55 @@ const About = () => {
   return (
     <section id="about" className="section relative pt-16" ref={ref}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-      
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-center">
+      <div className="w-fit mx-auto mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
+        Sobre Mim
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 items-start">
         <motion.div 
           className="lg:pr-12"
           variants={slideInLeft()}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
-            Sobre Mim
-          </div>
-          <h2 className="section-heading">Criando experiências digitais completas e integradas</h2>  
-          <p className="text-muted-foreground mb-6">
-            Minha jornada na programação começou com a curiosidade sobre como os sistemas funcionam por trás das interfaces e como elas podem proporcionar experiências incríveis. Essa curiosidade me levou a explorar tanto o desenvolvimento back-end quanto o front-end, permitindo que eu crie soluções completas que conectam eficiência técnica com usabilidade.
-          </p>
-          
-          <p className="text-muted-foreground mb-8">
-            Atualmente, estou me dedicando ao desenvolvimento de aplicações completas, explorando tecnologias como Java com Spring Boot e React com TypeScript para criar soluções robustas e escaláveis. Meu objetivo é unir a eficiência técnica com interfaces intuitivas, garantindo uma experiência fluida e integrada para os usuários.
-          </p>
-          
-          <div className="flex flex-wrap gap-2 mb-8">
-            {skills.map((skill, index) => (
-              <motion.div 
-                key={index}
-                className="flex items-center bg-white shadow-subtle hover:shadow-md px-3 py-1.5 rounded-full text-sm transition-all duration-300 ease-in-out hover:bg-primary/5 hover:-translate-y-1 cursor-pointer"
-                variants={fadeIn(0.1 * index)}
-                initial="initial"
-                animate={isInView ? "animate" : "initial"}
-              >
-                <span className="text-primary mr-1.5">{skill.icon}</span>
-                <span>{skill.text}</span>
+        <h2 className="section-heading">Criando experiências digitais completas e integradas</h2>  
+        <p className="text-muted-foreground mb-6">
+          Minha jornada na programação começou com a curiosidade sobre como os sistemas funcionam por trás das interfaces e como elas podem proporcionar experiências incríveis. Essa curiosidade me levou a explorar tanto o desenvolvimento back-end quanto o front-end, permitindo que eu crie soluções completas que conectam eficiência técnica com usabilidade.
+        </p>
+        <p className="text-muted-foreground mb-8">
+          Atualmente, estou me dedicando ao desenvolvimento de aplicações completas, explorando tecnologias como Java com Spring Boot e React com TypeScript para criar soluções robustas e escaláveis. Meu objetivo é unir a eficiência técnica com interfaces intuitivas, garantindo uma experiência fluida e integrada para os usuários.
+        </p>
+        <div className="flex flex-wrap gap-2 mb-8">
+          {skills.map((skill, index) => (
+            <motion.div 
+              key={index}
+              className="flex items-center bg-white shadow-subtlehover:shadow-md px-3 py-1.5 rounded-full text-smtransition-all duration-300 ease-in-out hover:bg-primary/5hover:-translate-y-1 cursor-pointer"
+              variants={fadeIn(0.1 * index)}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+            >
+              <span className="text-primary mr-1.5">{skill.icon}</span>
+              <span>{skill.text}</span>
               </motion.div>
             ))}
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-medium mb-3">Busco oportunidades como:</h3>
-            <ul className="space-y-2">
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Desenvolvedor Back-End</span>
-              </li>
-              <li className="flex items-start">
-                <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
-                  <span className="text-sm">✓</span>
-                </div>
-                <span>Desenvolvedor FullStack</span>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <h3 className="text-lg font-medium mb-3">Busco oportunidades como:</h3>
+          <ul className="space-y-2">
+            <li className="flex items-start">
+              <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
+                <span className="text-sm">✓</span>
+              </div>
+              <span>Desenvolvedor Back-End</span>
+            </li>
+            <li className="flex items-start">
+              <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
+                <span className="text-sm">✓</span>
+              </div>
+              <span>Desenvolvedor FullStack</span>
+            </li>
+          </ul>
+        </div>
         </motion.div>
-        
         <motion.div 
           className="relative"
           variants={slideInRight()}
