@@ -63,19 +63,16 @@ const Contact = () => {
   return (
     <section id="contact" className="section relative" ref={ref}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-      
+      <div className="w-fit mx-auto mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
+        Contato
+      </div>
       <div className="text-center mb-16">
         <motion.div
           variants={fadeIn()}
           initial="initial"
           animate={isInView ? "animate" : "initial"}
         >
-          <div className="inline-block mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
-            Contato
-          </div>
-          
           <h2 className="section-heading">Vamos trabalhar juntos?</h2>
-          
           <p className="section-subheading max-w-2xl mx-auto">
             Estou sempre aberto a novas oportunidades e parcerias. Entre em contato para discutirmos como posso agregar valor ao seu projeto ou equipe.
           </p>
