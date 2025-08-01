@@ -12,7 +12,7 @@ const Hero = () => {
 
   const downloadCurriculo = () => {
     const link = document.createElement('a');
-    link.href = '/curriculo.pdf';
+    link.href = '/portfolio/curriculo.pdf';
     link.download = 'curriculo.pdf';
     link.click();
   };

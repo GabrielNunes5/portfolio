@@ -49,7 +49,7 @@ Os projetos exibidos no portfólio são gerenciados no arquivo [`src/data/projec
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/GabrielNunes5/portifolio.git
+   git clone https://github.com/GabrielNunes5/portfolio.git
    ```
 2. Instale as dependências:
    ```bash
