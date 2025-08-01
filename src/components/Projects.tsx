@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id="projects" className="section relative bg-primary/5" ref={ref}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[50%] h-[1px] bg-gradient-to-r from-transparent via-border to-transparent"></div>
-      <div className="w-fit mx-auto mb-4 rounded-full px-3 py-1 text-base font-medium border border-primary/20 bg-primary/5 text-primary">
+      <div className="w-fit mx-auto mb-4 rounded-full px-3 py-1 font-medium border border-primary/20 bg-primary/5 text-primary">
         Projetos
       </div>
       <div className="text-center mb-16">
