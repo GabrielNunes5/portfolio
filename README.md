@@ -67,5 +67,5 @@ Os projetos exibidos no portfólio são gerenciados no arquivo [`src/data/projec
 ## 📬 Contato
 
 **E-mail: gabrielnunesdev01@gmail.com**
-**LinkedIn: (Gabriel Nunes)[https://www.linkedin.com/in/gabriel-nunes-085gn]**
-**GitHub: (Gabriel Nunes5)[github.com/GabrielNunes5]**
+**LinkedIn: [Gabriel Nunes](https://www.linkedin.com/in/gabriel-nunes-085gn)**
+**GitHub: [Gabriel Nunes5](github.com/GabrielNunes5)**
