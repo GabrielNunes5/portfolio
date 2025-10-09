@@ -66,7 +66,7 @@ const Skills = () => {
               </li>
               <li className="transition-colors duration-200 hover:text-primary hover:bg-primary/10 rounded px-2 py-1 cursor-pointer">
                 <div>
-                  <h4>TypeScript, Tailwind CSS</h4>
+                  <h4>Angular, TypeScript, Tailwind CSS</h4>
                 </div>
               </li>
             </ul>
