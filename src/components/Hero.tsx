@@ -12,8 +12,8 @@ const Hero = () => {
 
   const downloadCurriculo = () => {
     const link = document.createElement('a');
-    link.href = '/portfolio/curriculo.pdf';
-    link.download = 'curriculo.pdf';
+    link.href = '/portfolio/Curriculo_Gabriel-Nunes_Desenvolvedor.pdf';
+    link.download = 'Curriculo_Gabriel-Nunes_Desenvolvedor.pdf';
     link.click();
   };
 
@@ -66,7 +66,7 @@ const Hero = () => {
             <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/30 to-blue-400/30 rounded-full blur-3xl opacity-30 animate-pulse-subtle"></div>
             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 sm:border-8 border-white shadow-lg animate-blur-in">
               <img 
-                src="assets/Foto-Perfil.png" 
+                src="assets/Foto-Perfil.jpeg" 
                 alt="Foto de Perfil"
                 className="w-full h-full object-cover" 
               />
