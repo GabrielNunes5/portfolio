@@ -48,5 +48,21 @@ export const projects: Project[] = [
       "Upload de imagens para os animais disponíveis para adoção",
       "Rescrição de acesso para administradores"
     ],
+  },
+  {
+    id: 3,
+    title: "Landing Page para personal trainer",
+    description: "Landing page responsiva para um personal trainer com informações sobre serviços, depoimentos de clientes e formulário de contato.",
+    image: "https://i.ibb.co/7NgWrbxJ/imagem-2026-06-17-165855318.png",
+    technologies: ["React", "Tailwind CSS", "TypeScript", "Vite"],
+    link: "https://enock-junior-personal.vercel.app",
+    github: "https://github.com/GabrielNunes5/enock-junior-personal",
+    challenges: "Criar uma landing page simples, mas com um design atraente e responsivo.",
+    solution: "Utilizei React para criar componentes reutilizáveis e Tailwind CSS para estilização rápida e responsiva, garantindo uma boa experiência em dispositivos móveis",
+    features: [
+      "Design responsivo",
+      "Componentes reutilizáveis",
+      "Formulário de contato funcional"
+    ],
   }
 ];
